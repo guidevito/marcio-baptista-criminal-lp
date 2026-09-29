@@ -251,3 +251,9 @@ svg { fill: currentColor; }
   .portrait-frame { height: 440px; }
   .service-card { padding-inline: 22px; }
 }
+
+/* Keep the supplied portrait complete, with its original proportions on every screen. */
+.portrait-frame, .about-image { height: auto; }
+.portrait-frame { border-radius: 8px; }
+.portrait-frame img, .about-image img { height: auto; object-fit: contain; filter: none; }
+.hero-portrait::before { border-radius: 8px; }
